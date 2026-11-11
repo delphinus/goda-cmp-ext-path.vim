@@ -3,8 +3,7 @@
 [日本語](README.ja.md)
 
 > [!WARNING]
-> This is a beta (v0.0.x). goda-cmp.vim itself is under active development,
-> and its bundled extensions are being moved into repositories of their own, so
+> This is a beta (v0.0.x). goda-cmp.vim itself is under active development, so
 > the API, the import paths and even the name of this repository may change.
 
 A path source for [goda-cmp.vim](https://github.com/Shougo/goda-cmp.vim).
@@ -19,9 +18,9 @@ candidate (`path.Data`), so that a UI can show them.
 - A relative path starts from the directory of the buffer.
 - Dot files are offered only when a dot is typed.
 
-## Differences from the bundled `file` source
+## Differences from the `file` source of goda-cmp-ext
 
-The `file` source bundled with goda-cmp.vim offers only the rest of the name
+The `file` source of [goda-cmp-ext](https://github.com/Shougo/goda-cmp-ext) offers only the rest of the name
 after what was typed, and gives its candidates no full path. This source
 offers the whole name, so that a fuzzy matcher can narrow the candidates down,
 and a UI can read the full path and the modification time from `path.Data`.

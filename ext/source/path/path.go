@@ -1,7 +1,7 @@
 // Package path is a source "path" for goda-cmp.vim that completes file
 // paths. It behaves like the path source of blink.cmp.
 //
-// The file source bundled with goda-cmp gives its candidates no full path, so
+// The file source of goda-cmp-ext gives its candidates no full path, so
 // a UI cannot show their modification times, and it offers only the rest of
 // the name after what was typed, so a fuzzy matcher cannot narrow them down.
 // This source offers the names in the directory as they are, and puts the
