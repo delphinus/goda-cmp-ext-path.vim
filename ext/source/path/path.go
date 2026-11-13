@@ -125,6 +125,10 @@ func (s source) Gather(ctx context.Context, h sdk.Host, c *cmp.Context) (cmp.Gat
 	for _, e := range ents {
 		n := e.Name()
 		if strings.HasPrefix(n, ".") && !hidden {
+			// The candidates are filtered again as the name is typed, and
+			// a dot typed next would find no dot files among them: ask
+			// again on the next keystroke while nothing is typed.
+			g.Incomplete = name == ""
 			continue
 		}
 		full := filepath.Join(dir, n)
