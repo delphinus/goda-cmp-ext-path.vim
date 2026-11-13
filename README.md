@@ -2,9 +2,13 @@
 
 [日本語](README.ja.md)
 
-> [!WARNING]
-> This is a beta (v0.0.x). goda-cmp.vim itself is under active development, so
-> the API, the import paths and even the name of this repository may change.
+> [!NOTE]
+> goda-cmp.vim itself is under active development, so the API of this plugin
+> may change to follow it.
+
+https://github.com/user-attachments/assets/9c510911-74ec-4d9f-b9dc-0944b1c3951b
+
+*The whole names with their modification times, narrowed down by `matcherfuzzy` of [goda-cmp-ext-fuzzy.vim](https://github.com/delphinus/goda-cmp-ext-fuzzy.vim); the dot files come when a dot is typed. The menu shows `path.Data` through a converter of the demo (recorded with `demo/record.sh`).*
 
 A path source for [goda-cmp.vim](https://github.com/Shougo/goda-cmp.vim).
 
@@ -71,6 +75,13 @@ func main() {
 	b.Main()
 }
 ```
+
+## Demo
+
+`demo/record.sh` records the demo with a minimal configuration
+(`demo/init.lua`, `demo/config`): Neovim and the plugins it clones, typing
+into `demo/sample/notes.txt`. It needs asciinema, agg and ffmpeg, and writes
+`demo/out/`.
 
 ## License
 

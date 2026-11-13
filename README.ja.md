@@ -2,8 +2,12 @@
 
 [English](README.md)
 
-> [!WARNING]
-> β版 (v0.0.x) です。goda-cmp.vim 自体が開発の途中のため、API・import のパス・このリポジトリの名前が変わることがあります。
+> [!NOTE]
+> goda-cmp.vim 自体が開発の途中のため、それに合わせてこのプラグインの API も変わることがあります。
+
+https://github.com/user-attachments/assets/9c510911-74ec-4d9f-b9dc-0944b1c3951b
+
+*名前全体を更新日時と一緒に出し、[goda-cmp-ext-fuzzy.vim](https://github.com/delphinus/goda-cmp-ext-fuzzy.vim) の `matcherfuzzy` で絞り込んだところ。ドットファイルはドットを打つと出る。menu の日時は、デモの converter が `path.Data` から作っている (`demo/record.sh` で録画)。*
 
 [goda-cmp.vim](https://github.com/Shougo/goda-cmp.vim) 用のパスのソース。
 
@@ -60,6 +64,10 @@ func main() {
 	b.Main()
 }
 ```
+
+## デモ
+
+`demo/record.sh` は、最小の設定 (`demo/init.lua`、`demo/config`) でデモを録画する。Neovim を使い、プラグインは自分で取得して、`demo/sample/notes.txt` に打ち込む。asciinema、agg、ffmpeg が要る。出力は `demo/out/`。
 
 ## ライセンス
 
